@@ -1,7 +1,6 @@
 FROM rust:alpine as build
 
-COPY ./Cargo.* ./
-COPY ./src ./
+COPY . .
 
 RUN cargo build --release
 
